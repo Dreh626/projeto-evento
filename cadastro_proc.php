@@ -7,12 +7,15 @@
 
      $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
 
-     $sql = "INSERT INTO usuario (login,senha)
-             VALUES (:login,:senha)";
+     $sql = "INSERT INTO usuario (nome,telefone,email,usuario,senha)
+             VALUES (:nome,:telefone,email,usuario,senha)";
 
     $resultado = $con->prepare($sql);
-    $resultado -> bindParam(":login",$login);
-    $resultado -> bindParam(":senha",$senha);
+    $resultado -> bindParam(":nome",$nome);
+    $resultado -> bindParam(":telefone",$telefone);
+    $resultado -> bindParam(":email",$email);
+    $resultado -> bindParam(":usuario",$usuario);
+    $resultado -> bindParam(":senha", $senha);
     $resultado->execute();
 
     header("location: login.php?ok=1");
