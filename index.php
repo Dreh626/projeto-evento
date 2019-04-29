@@ -2,12 +2,14 @@
 <?php require_once "topo.php" ?>
       
 
-<div class="card text-center">
+<!-- <div class="card text-center">
   <div class="card-body">
     <h5 class="card-title">Acesse o painel de clientes</h5>
     <a href="./clientes-pdo/index.php" class="btn btn-primary">+ informações</a>
   </div>
-</div></hr>
+</div></hr> -->
+
+<button><a href="./clientes-pdo/index.php" class="btn btn-primary">+ informações</a></button>
 
 <div class="card text-center">
   <div class="card-body">

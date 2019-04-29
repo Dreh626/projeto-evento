@@ -8,7 +8,13 @@
 </head>
 <body>
     <form action="cadastro_proc.php" method="post">
-        <input type="text" name="login" placeholder="Login">
+        <input type="text" name="login" placeholder="Nome">
+        <br>
+        <input type="text" name="login" placeholder="Telefone">
+        <br>
+        <input type="email" name="login" placeholder="E-mail">
+        <br>
+        <input type="text" name="login" placeholder="Usuario">
         <br>
         <input type="password" name="senha" placeholder="Senha">
         <br>

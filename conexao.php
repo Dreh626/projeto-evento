@@ -2,6 +2,6 @@
 $servidor = 'localhost';
 $usuario = 'root';
 $senha = '';
-$banco = 'testefatec';
+$banco = 'evento';
 
 $con = new PDO("mysql:host=$servidor;dbname=$banco", $usuario,$senha);
